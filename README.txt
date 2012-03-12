@@ -1,0 +1,1 @@
+In order for the Boost.Log project to build, you must define the environment path variable BOOST_ROOT to point to your root boost folder.
