@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Loggers">
+</Property><Property Name="Solution File" Value="C:\Development\LoggingInvestigation\Projects\Loggers.sln">
+</Property><Property Name="Date" Value="Monday, March 12, 2012">
+</Property><Property Name="Time" Value="12:01:51 PM">
+</Property></Properties><Event ErrorLevel="0" Project="logging_unittest" Source="logging_unittest\logging_unittest.vcproj" Description="Converting project file 'C:\Development\LoggingInvestigation\Projects\logging_unittest\logging_unittest.vcproj'.">
+</Event><Event ErrorLevel="1" Project="logging_unittest" Source="logging_unittest\logging_unittest.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="logging_unittest" Source="logging_unittest\logging_unittest.vcproj" Description="Done converting to new project file 'C:\Development\LoggingInvestigation\Projects\logging_unittest\logging_unittest.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="logging_unittest" Source="logging_unittest\logging_unittest.vcproj" Description="Converted">
+</Event></UpgradeLog>
