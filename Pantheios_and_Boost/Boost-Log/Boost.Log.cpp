@@ -1,10 +1,17 @@
-// Boost.Log.cpp : Defines the entry point for the console application.
-//
-
+#pragma once
 #include "stdafx.h"
+#include "logfile_rotation_example.h"
 
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
+	try
+	{
+		logfile_rotation_example();
+	}
+	catch(exception &e)
+	{
+		cout << "Unknown exception: " << e.what() << endl;
+		return 1;
+	}
 	return 0;
 }
-
