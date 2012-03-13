@@ -20,6 +20,11 @@
 #include <pantheios/inserters/args.hpp>
 #include <pantheios/inserters/integer.hpp>
 #include <pantheios/inserters/pointer.hpp>
+#include <pantheios/inserters/w2m.hpp>
+#include <pantheios/inserters/real.hpp>
+
+#include <stlsoft/string/shim_string.hpp>
+
 
 
 // TODO: reference additional headers your program requires here
