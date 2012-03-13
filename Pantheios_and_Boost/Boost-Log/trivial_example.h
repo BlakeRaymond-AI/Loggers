@@ -16,6 +16,7 @@
 // #define BOOST_LOG_DYN_LINK 1
 
 #include "stdafx.h"
+#include <boost/log/trivial.hpp>
 
 void trivial_example()
 {
