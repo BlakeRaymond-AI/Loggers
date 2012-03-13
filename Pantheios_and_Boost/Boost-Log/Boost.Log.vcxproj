@@ -82,6 +82,7 @@
     <ClInclude Include="logfile_rotation_example.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="trivial_example.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Boost.Log.cpp" />

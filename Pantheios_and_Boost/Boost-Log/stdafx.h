@@ -23,6 +23,9 @@
 #include <boost/log/sinks/sync_frontend.hpp>
 #include <boost/log/sinks/text_file_backend.hpp>
 
+#include <boost/log/trivial.hpp>
+#include <boost/log/core.hpp>
+
 using namespace std;
 
 // TODO: reference additional headers your program requires here
