@@ -30,6 +30,15 @@
     <ClInclude Include="trivial_example.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="basic_usage_example.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="advanced_usage_example.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="app_severity_levels.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
