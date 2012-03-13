@@ -29,6 +29,8 @@
 //
 // Author: Ray Sidney
 
+#pragma once
+
 #include "config_for_unittests.h"
 #include "utilities.h"
 
@@ -231,6 +233,9 @@ int main(int argc, char **argv) {
   ShutdownGoogleLogging();
 
   fprintf(stdout, "PASS\n");
+
+	LOG(INFO) << L"Wide character logging";
+
   return 0;
 }
 
