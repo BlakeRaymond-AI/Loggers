@@ -13,17 +13,14 @@
  */
 
 // #define BOOST_ALL_DYN_LINK 1
- #define BOOST_LOG_DYN_LINK 1
+// #define BOOST_LOG_DYN_LINK 1
 
-#include "stdafx.h"
-/*
 #include <boost/log/trivial.hpp>
 #include <boost/log/core.hpp>
 #include <boost/log/filters.hpp>
 
 int main(int argc, char* argv[])
 {
-	/*
     // Trivial logging: all log records are written into a file
     BOOST_LOG_TRIVIAL(trace) << "A trace severity message";
     BOOST_LOG_TRIVIAL(debug) << "A debug severity message";
@@ -48,7 +45,5 @@ int main(int argc, char* argv[])
     BOOST_LOG_TRIVIAL(error) << "An error severity message";
     BOOST_LOG_TRIVIAL(fatal) << "A fatal severity message";
 
-
     return 0;
 }
-*/

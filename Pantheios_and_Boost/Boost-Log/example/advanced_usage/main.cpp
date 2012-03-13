@@ -18,7 +18,6 @@
 // #define BOOST_ALL_DYN_LINK 1
 // #define BOOST_LOG_DYN_LINK 1
 
-#include "stdafx.h"
 #include <cassert>
 #include <iostream>
 #include <fstream>
@@ -30,9 +29,6 @@
 #include <boost/log/sinks.hpp>
 #include <boost/log/utility/empty_deleter.hpp>
 #include <boost/log/utility/scoped_attribute.hpp>
-
-namespace advanced_use 
-{
 
 namespace logging = boost::log;
 namespace fmt = boost::log::formatters;
@@ -300,5 +296,3 @@ int main(int argc, char* argv[])
 
     return 0;
 }
-
-}//namespace advanced_use

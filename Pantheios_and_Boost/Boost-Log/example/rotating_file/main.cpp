@@ -17,7 +17,6 @@
 
 // #define BOOST_LOG_DYN_LINK 1
 
-#include "stdafx.h"
 #include <stdexcept>
 #include <string>
 #include <iostream>

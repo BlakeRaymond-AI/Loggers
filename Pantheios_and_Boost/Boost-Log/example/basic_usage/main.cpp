@@ -18,7 +18,6 @@
 // #define BOOST_ALL_DYN_LINK 1
 // #define BOOST_LOG_DYN_LINK 1
 
-#include "stdafx.h"
 #include <iostream>
 #include <boost/shared_ptr.hpp>
 #include <boost/make_shared.hpp>
@@ -32,9 +31,6 @@
 #include <boost/log/utility/init/common_attributes.hpp>
 
 #include <boost/log/attributes/timer.hpp>
-
-namespace basic_use
-{
 
 namespace logging = boost::log;
 namespace fmt = boost::log::formatters;
@@ -118,5 +114,3 @@ int main(int argc, char* argv[])
 
     return 0;
 }
-
-} // namespace basic_use
