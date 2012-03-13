@@ -5,6 +5,11 @@
 #include "logfile_rotation_example.h"
 #include "advanced_usage_example.h"
 #include "asynchronous_logging_example.h"
+#include "multiple_threads_example.h"
+#include "multiple_files_example.h"
+
+//The libraries that need to be pulled in for this example weren't built correctly.
+//#include "settings_file_example.h"
 
 //For some reason running the trivial logging example breaks the logfile 
 //rotation example (and probably others), so for now we can only run one example at a time.
@@ -19,6 +24,8 @@ int main()
 		cout << "2: Logfile rotation" << endl;
 		cout << "3: Advanced usage" << endl;
 		cout << "4: Asynchronous logging" << endl;
+		cout << "5: Multiple threads" << endl;
+		cout << "6: Multiple files" << endl;
 		
 		char request = '\0';
 
@@ -41,6 +48,12 @@ int main()
 				break;
 			case '4':
 				asynchronous_logging_example();
+				break;
+			case '5':
+				multiple_threads_example();
+				break;
+			case '6':
+				multiple_files_example();
 				break;
 			default:
 				cout << "Not recognized";

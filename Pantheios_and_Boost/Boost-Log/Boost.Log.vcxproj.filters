@@ -42,6 +42,15 @@
     <ClInclude Include="asynchronous_logging_example.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="multiple_threads_example.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="multiple_files_example.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="settings_file_example.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
