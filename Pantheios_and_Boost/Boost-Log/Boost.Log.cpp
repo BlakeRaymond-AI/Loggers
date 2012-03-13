@@ -4,9 +4,10 @@
 #include "trivial_example.h"
 #include "logfile_rotation_example.h"
 #include "advanced_usage_example.h"
+#include "asynchronous_logging_example.h"
 
 //For some reason running the trivial logging example breaks the logfile 
-//rotation example, so for now we can only run one example at a time.
+//rotation example (and probably others), so for now we can only run one example at a time.
 
 int main()
 {
@@ -17,6 +18,7 @@ int main()
 		cout << "1: Trivial logging" << endl;
 		cout << "2: Logfile rotation" << endl;
 		cout << "3: Advanced usage" << endl;
+		cout << "4: Asynchronous logging" << endl;
 		
 		char request = '\0';
 
@@ -36,6 +38,9 @@ int main()
 				break;
 			case '3':
 				advanced_usage_example();
+				break;
+			case '4':
+				asynchronous_logging_example();
 				break;
 			default:
 				cout << "Not recognized";
