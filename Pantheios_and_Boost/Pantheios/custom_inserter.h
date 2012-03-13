@@ -63,9 +63,47 @@ namespace stlsoft
 	}
 }
 
+//It is not necessary to define a separate inserter class; simply writing 
+//a custom "shim" alone is also a solution, though less efficient.
+struct MetaDataItem
+{
+	MetaDataItem(double start, double end, int code)
+		: _start(start),
+		  _end(end),
+		  _code(code)
+	{}
+	double _start;
+	double _end;
+	int	   _code;
+};
+
+//The following code is mostly taken from a tutorial 
+//but it must have been for an older version of the library since
+//stlsoft::shim_string no longer exists, at least not under that name.
+//namespace stlsoft
+//{
+//	inline stlsoft::shim_string<char> c_str_data_a(MetaDataItem const& item)
+//	{
+//		stlsoft::shim_string<char> s(101);
+//		int cch = ::sprintf(s, "Start time: %f, End time: %f, Code: %d", item._start, item._end, item._code);
+//		s.truncate(static_cast<size_t>(cch));
+//		return s;
+//	}
+//
+//	inline size_t c_str_len_a(MetaDataItem const& item)
+//	{
+//		char buf[101];
+//		return static_cast<size_t>(::sprintf(s, "Start time: %f, End time: %f, Code: %d", item._start, item._end, item._code));
+//	}
+//}
+
 void custom_inserter_example()
 {
 	//TsPoint insertion via custom inserter class
 	TsPoint point(40000, 10);
 	pantheios::log_DEBUG("TsPoint inserter: ", tsPoint_inserter(point));
+
+	//MetaData insertion via custom shim (not working as it should be)
+	//MetaDataItem item(40000, 40001, -1);
+	//pantheios::log_DEBUG("MetaDataItem shim: ", item);
 }
