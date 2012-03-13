@@ -79,6 +79,9 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="custom_backend.cpp">
+      <FileType>CppCode</FileType>
+    </ClCompile>
     <ClInclude Include="custom_inserter.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />

@@ -8,6 +8,8 @@
 //Process identity appended to all log messages for this program
 extern "C" const char PANTHEIOS_FE_PROCESS_IDENTITY[] = "LogToConsole";
 
+//To use the custom backend example, uncomment the preprocessor definition in stdafx
+
 int _tmain(int argc, _TCHAR* argv[])
 {
     try
@@ -16,10 +18,7 @@ int _tmain(int argc, _TCHAR* argv[])
             argv, pantheios::args::arg0FileOnly), ")");
 
 		trivial_example();
-		custom_inserter_example();
-
-
-        
+		custom_inserter_example();        
 
         return EXIT_SUCCESS;
     }

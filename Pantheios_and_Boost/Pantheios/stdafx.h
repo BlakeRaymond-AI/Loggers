@@ -17,6 +17,7 @@
 #include <iomanip>
 
 #include <pantheios/pantheios.hpp>
+#include <pantheios/init_codes.h>
 #include <pantheios/inserters/args.hpp>
 #include <pantheios/inserters/integer.hpp>
 #include <pantheios/inserters/pointer.hpp>
@@ -24,6 +25,10 @@
 #include <pantheios/inserters/real.hpp>
 
 #include <stlsoft/string/shim_string.hpp>
+
+//#define USE_CUSTOM_BACKEND
+
+using namespace std;
 
 
 
