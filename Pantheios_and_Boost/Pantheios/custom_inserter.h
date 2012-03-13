@@ -1,7 +1,7 @@
 #pragma once
 #include "stdafx.h"
 
-//It is also possible to write new inserter classes for user-defined types
+//It is possible to write custom inserter classes for user-defined types
 struct TsPoint
 {
 	TsPoint(double time, double value) :_time(time), _value(value) {}
@@ -63,8 +63,7 @@ namespace stlsoft
 	}
 }
 
-//It is not necessary to define a separate inserter class; simply writing 
-//a custom "shim" alone is also a solution, though less efficient.
+//Writing a custom "shim" alone is also a solution, though less efficient.
 struct MetaDataItem
 {
 	MetaDataItem(double start, double end, int code)

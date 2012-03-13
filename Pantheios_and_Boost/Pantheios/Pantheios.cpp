@@ -14,8 +14,8 @@ int _tmain(int argc, _TCHAR* argv[])
 {
     try
     {
-        pantheios::log(pantheios::debug, "Entering main(", pantheios::args(argc,
-            argv, pantheios::args::arg0FileOnly), ")");
+        pantheios::log(pantheios::debug, "Entering main(", 
+			pantheios::args(argc, argv, pantheios::args::arg0FileOnly), ")");
 
 		trivial_example();
 		custom_inserter_example();        
