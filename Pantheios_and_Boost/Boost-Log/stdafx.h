@@ -29,9 +29,10 @@
 #include <boost/log/sinks/sync_frontend.hpp>
 #include <boost/log/sinks/text_file_backend.hpp>
 #include <boost/log/utility/empty_deleter.hpp>
+#include <boost/regex.hpp>
 
 using namespace std;
 
-#define BOOST_LOG_DYN_LINK 1
+//#define BOOST_LOG_DYN_LINK 1
 
 // TODO: reference additional headers your program requires here
