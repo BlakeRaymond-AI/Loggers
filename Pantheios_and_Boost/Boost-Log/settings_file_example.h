@@ -29,11 +29,11 @@ namespace src = boost::log::sources;
 using boost::shared_ptr;
 
 //  Global logger declaration
-BOOST_LOG_DECLARE_GLOBAL_LOGGER(settings_file_test_lg, src::severity_logger< >)
+BOOST_LOG_DECLARE_GLOBAL_LOGGER(settings_file_ex_lg, src::severity_logger< >)
 
 void try_logging()
 {
-    src::severity_logger< >& lg = get_settings_file_test_lg();
+    src::severity_logger< >& lg = get_settings_file_ex_lg();
     BOOST_LOG_SEV(lg, normal) << "This is a normal severity record";
     BOOST_LOG_SEV(lg, notification) << "This is a notification severity record";
     BOOST_LOG_SEV(lg, warning) << "This is a warning severity record";
