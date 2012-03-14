@@ -8,6 +8,7 @@
 #include "multiple_threads_example.h"
 #include "multiple_files_example.h"
 #include "settings_file_example.h"
+#include "runtime_file_destination_example.h"
 
 //For some reason running the trivial logging example breaks the logfile 
 //rotation example (and probably others), so for now we can only run one example at a time.
@@ -25,6 +26,7 @@ int main()
 		cout << "5: Multiple threads" << endl;
 		cout << "6: Multiple files" << endl;
 		cout << "7: Settings file example" << endl;
+		cout << "8: Runtime file destination example" << endl;
 		
 		char request = '\0';
 
@@ -56,6 +58,9 @@ int main()
 				break;
 			case '7':
 				settings_file_example();
+				break;
+			case '8':
+				runtime_file_destination_example();
 				break;
 			default:
 				cout << "Not recognized";

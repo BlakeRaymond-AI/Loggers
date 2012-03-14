@@ -88,6 +88,7 @@
     <ClInclude Include="logfile_rotation_example.h" />
     <ClInclude Include="multiple_files_example.h" />
     <ClInclude Include="multiple_threads_example.h" />
+    <ClInclude Include="runtime_file_destination_example.h" />
     <ClInclude Include="settings_file_example.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />

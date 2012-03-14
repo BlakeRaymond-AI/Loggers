@@ -51,6 +51,9 @@
     <ClInclude Include="settings_file_example.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="runtime_file_destination_example.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
