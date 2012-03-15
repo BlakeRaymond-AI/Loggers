@@ -46,7 +46,7 @@
 enum config
 {
     RECORD_COUNT = 1000000,
-    THREAD_COUNT = 3,
+    THREAD_COUNT = 1,
     SINK_COUNT = 1
 };
 
@@ -66,8 +66,6 @@ enum severity_level
     error
 };
 
-const int NUM_RECORDS = 1000000;
-
 void do_logs_no_attrs(boost::shared_ptr<sinks::synchronous_sink< sinks::text_ostream_backend > > sink)
 {
 	boost::shared_ptr< logging::core > core = logging::core::get();
@@ -75,7 +73,7 @@ void do_logs_no_attrs(boost::shared_ptr<sinks::synchronous_sink< sinks::text_ost
 
 	src::logger lg;
 
-	for(size_t i=0; i<NUM_RECORDS; ++i) {
+	for(size_t i=0; i<RECORD_COUNT; ++i) {
 		BOOST_LOG(lg) << "Shoop da woop";
 	}
 	core->remove_sink(sink);
@@ -90,7 +88,7 @@ void do_logs_basic_attrs(boost::shared_ptr<sinks::synchronous_sink< sinks::text_
 	lg.add_attribute("LineID", attrs::counter< unsigned int >(1));
 	lg.add_attribute("TimeStamp", attrs::local_clock());
 	lg.add_attribute("Scope", attrs::named_scope());
-	for(size_t i=0; i<NUM_RECORDS; ++i) {
+	for(size_t i=0; i<RECORD_COUNT; ++i) {
 		BOOST_LOG(lg) << "Shoop da woop";
 	}
 
@@ -140,15 +138,15 @@ void simple_test_no_attrs()
 	cout << "Results: " << endl;
 	cout << "Auto flush on: \n\t" << duration1 << " us ("
 		 << std::fixed << std::setprecision(4) 
-		 << static_cast< double >(NUM_RECORDS) / (static_cast< double >(duration1) / 1000000.0)
+		 << static_cast< double >(RECORD_COUNT) / (static_cast< double >(duration1) / 1000000.0)
          << " records per second, " 
-		 << (static_cast< double >(duration1) / 1000.0) / static_cast< double >(NUM_RECORDS)  
+		 << (static_cast< double >(duration1) / 1000.0) / static_cast< double >(RECORD_COUNT)  
 		 << " ms per record)" << std::endl;
 	cout << "Auto flush off: \n\t" << duration2 << " us ("
 		 << std::fixed << std::setprecision(4) 
-		 << static_cast< double >(NUM_RECORDS) / (static_cast< double >(duration2) / 1000000.0)
+		 << static_cast< double >(RECORD_COUNT) / (static_cast< double >(duration2) / 1000000.0)
          << " records per second, " 
-		 << (static_cast< double >(duration2) / 1000.0) / static_cast< double >(NUM_RECORDS)  
+		 << (static_cast< double >(duration2) / 1000.0) / static_cast< double >(RECORD_COUNT)  
 		 << " ms per record)" << std::endl;
 }
 
@@ -196,19 +194,19 @@ void simple_test_basic_attrs()
 	cout << "Results: " << endl;
 	cout << "Auto flush on: \n\t" << duration1 << " us ("
 		 << std::fixed << std::setprecision(4) 
-		 << static_cast< double >(NUM_RECORDS) / (static_cast< double >(duration1) / 1000000.0)
+		 << static_cast< double >(RECORD_COUNT) / (static_cast< double >(duration1) / 1000000.0)
          << " records per second, " 
-		 << (static_cast< double >(duration1) / 1000.0) / static_cast< double >(NUM_RECORDS)  
+		 << (static_cast< double >(duration1) / 1000.0) / static_cast< double >(RECORD_COUNT)  
 		 << " ms per record)" << std::endl;
 	cout << "Auto flush off: \n\t" << duration2 << " us ("
 		 << std::fixed << std::setprecision(4) 
-		 << static_cast< double >(NUM_RECORDS) / (static_cast< double >(duration2) / 1000000.0)
+		 << static_cast< double >(RECORD_COUNT) / (static_cast< double >(duration2) / 1000000.0)
          << " records per second, " 
-		 << (static_cast< double >(duration2) / 1000.0) / static_cast< double >(NUM_RECORDS)  
+		 << (static_cast< double >(duration2) / 1000.0) / static_cast< double >(RECORD_COUNT)  
 		 << " ms per record)" << std::endl;
 }
 
-int main(int argc, char* argv[])
+int not_main(int argc, char* argv[])
 {
 	cout << "No attributes: " << endl;
     simple_test_no_attrs();

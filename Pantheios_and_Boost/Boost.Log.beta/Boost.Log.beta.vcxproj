@@ -82,8 +82,10 @@
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="tspoint_attr.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="logging_sample.cpp" />
     <ClCompile Include="record_emission.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
