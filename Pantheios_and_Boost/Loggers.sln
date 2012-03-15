@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pantheios_", "Pantheios_", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Boost.Log", "Boost-Log\Boost.Log.vcxproj", "{C5FD3834-F6AD-4979-8F8F-D396C878A628}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Boost.Log.beta", "Boost.Log.beta\Boost.Log.beta.vcxproj", "{56B52B4F-88CB-4FF0-84F7-36544E78A2D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -23,6 +25,10 @@ Global
 		{C5FD3834-F6AD-4979-8F8F-D396C878A628}.Debug|Win32.Build.0 = Debug|Win32
 		{C5FD3834-F6AD-4979-8F8F-D396C878A628}.Release|Win32.ActiveCfg = Release|Win32
 		{C5FD3834-F6AD-4979-8F8F-D396C878A628}.Release|Win32.Build.0 = Release|Win32
+		{56B52B4F-88CB-4FF0-84F7-36544E78A2D5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{56B52B4F-88CB-4FF0-84F7-36544E78A2D5}.Debug|Win32.Build.0 = Debug|Win32
+		{56B52B4F-88CB-4FF0-84F7-36544E78A2D5}.Release|Win32.ActiveCfg = Release|Win32
+		{56B52B4F-88CB-4FF0-84F7-36544E78A2D5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +36,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{57F43535-24A7-469C-8F3F-A4523DAC0BE4} = {63644D50-2781-47D8-AA35-C9FAF65E8A6B}
 		{C5FD3834-F6AD-4979-8F8F-D396C878A628} = {217A742D-BBD3-4435-9410-61E4A71BB56E}
+		{56B52B4F-88CB-4FF0-84F7-36544E78A2D5} = {217A742D-BBD3-4435-9410-61E4A71BB56E}
 	EndGlobalSection
 EndGlobal
